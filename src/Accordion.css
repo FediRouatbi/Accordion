@@ -1,0 +1,36 @@
+.question {
+  font-size: 4rem;
+  padding: rem;
+  max-width: 80rem;
+}
+.question__title {
+  color: rgba(0, 0, 0, 0.9);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid black;
+  background-color: #888;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.question__title::after {
+  content: "\f101";
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  padding-right: 1rem;
+  color: rgba(0, 0, 0, 0.9);
+
+  transition: transform 0.5s ease;
+}
+.question__title.active::after {
+  transform: rotate(90deg);
+}
+
+.question__answer {
+  font-size: 2rem;
+  overflow: hidden;
+  max-height: 100%;
+  transition: max-height 0.7s ease-in-out;
+}
+.question__answer__content {
+  padding: 3rem 2rem;
+}
