@@ -1,6 +1,5 @@
 import "./App.css";
 import Accordion from "./Accordion";
-import { useState, useRef } from "react";
 
 const App = () => {
   return (
